@@ -1,0 +1,114 @@
+@use 'responsive_1280.scss';
+@use 'responsive_750.scss';
+
+@font-face {
+    font-family: 'FuenteChallenge';
+    src: url('../src/assets/Jost-VariableFont_wght.ttf');
+}
+
+html,
+body {
+    color: white;
+    background-color: #141414;
+    font-family: 'FuenteChallenge', Arial, Helvetica, sans-serif;
+}
+
+header {
+    // border-bottom: 1px solid #414141;
+    background-color: #141414ee;
+    height: 100px;
+    width: 100%;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    & img {
+        height: 80px;
+    }
+}
+
+header,
+.header-logo,
+.header-buttons {
+    display: flex;
+    align-items: center;
+
+    & div {
+        padding: 15px;
+    }
+}
+
+.header-buttons {
+    flex: 1;
+    justify-content: end;
+
+    & :hover {
+        transition: font-weight 0.3s ease;
+        background-color: aliceblue;
+        border-radius: 5px;
+        color: #141414;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}
+
+#top-text::before {
+    content: "5";
+}
+
+main {
+    margin-top: 110px; //guardamos para navbar
+    overflow: hidden;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    direction: rtl;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.first,
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // gap: 5px;
+    padding-bottom: 40px;
+    padding: 8px;
+
+    & .item {
+        flex: 1 1 225px;
+        padding: 2px;
+        }
+    
+    & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.2s ease;
+    }
+}
+
+.top-item img {
+    max-width: 100%;
+}
+
+.item,
+.top-item {
+    :hover {
+        transition: transform 0.2s ease-in-out;
+        transform: scale(1.2);
+        // zoom: 120%;
+    }
+}

@@ -1,0 +1,32 @@
+.base {
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+.important {
+    background-color: darkred;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+.warning {
+    background-color: rosybrown;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+.principal {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.secondary {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.shadow {
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: -5px 10px 10px #575757;    
+}

@@ -1,0 +1,18 @@
+@media screen and (max-width: 1280px) {
+
+    .platform-title {
+        display: none;
+    }
+
+    span#top-text::before {
+        content: "3";
+    }
+
+    .top {
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+
+        & div:nth-child(-n+2) {
+            display: none;
+        }
+    }
+}
