@@ -1,0 +1,32 @@
+.base {
+    background-color: rgb(68, 0, 255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.important {
+    background-color: rgb(3, 0, 97);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.warning {
+    background-color: rgb(103, 228, 230);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.principal {
+    font-family: 'Times New Roman', Times, serif
+}
+
+.secondary {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shadow {
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px 10px #575757;    
+}

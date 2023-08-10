@@ -1,0 +1,70 @@
+@media screen and (max-width:768px) {
+
+    .header-class {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+
+        & .toolbar {
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+    }
+
+    .menu-title {
+        display: none;
+    }
+
+    body .page-container {
+        margin: 0;
+        display: block;
+    }
+
+    .nav-bar {
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-bar .menu-container {
+        width: 100%;
+    }
+
+    .menu-container ul {
+        box-sizing: border-box;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+
+        & li {
+            text-align: center;
+            min-width: 20%;
+        }
+    }
+
+    main .list {
+        display: inline;
+
+        & .card {
+            padding: 16px;
+            margin: 4px;
+            width:auto;
+            border: 0px solid #6c6c6c;
+            border-radius: 2px;
+            padding: 0px;
+            flex-direction: row;
+            justify-content: left;
+            align-items: 0;
+            text-align: left;
+
+            & img {
+                padding: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+
+    .footer-class {
+        margin: 0px;
+    }
+}

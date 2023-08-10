@@ -1,0 +1,29 @@
+@media screen and (max-width: 750px) {
+
+    body {
+        font-size: 24px;
+    }
+
+    .section-title {
+        text-align: center;
+        text-transform: uppercase;
+        border-top: 1px solid #ffae00;
+        background-color: #363636;
+    }
+
+    span#top-text::before {
+        content: "3";
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    main .top {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .first {
+        background-color: #242424;
+    }
+}
